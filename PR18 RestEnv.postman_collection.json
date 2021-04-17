@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "ae061c74-dcf7-46ae-b362-48547ad192f4",
+		"name": "PR18 RestEnv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ivan\",\r\n    \"lastName\":\"Nikolaev-Axenov\",\r\n    \"middleName\":\"Sergeevich\",\r\n    \"birthDate\":\"15.06.2001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ivan\",\r\n    \"lastName\":\"Ivanov\",\r\n    \"middleName\":\"Ivanovich\",\r\n    \"birthDate\":\"02.02.2001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByLastName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getUserByLastName/Ivanov",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getUserByLastName",
+						"Ivanov"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
